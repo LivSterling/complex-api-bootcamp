@@ -5,8 +5,6 @@
 function fetchAndTranslate(){
   const zenQoutesUrl = `https://api.allorigins.win/raw?url=https://zenquotes.io/api/random/&timestamp=${new Date().getTime()}`
   const yodaUrl = `https://api.funtranslations.com/translate/yoda.json` 
-  https://api.allorigins.win/raw?url=https://coffee.alexflipnote.dev/jacVUEOMMhk_coffee.png
-
 
   document.querySelector('h2').classList.remove('fade-in');
 
