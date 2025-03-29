@@ -1,40 +1,67 @@
-/* Box Model Hack */
-* {
-     box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
 /******************************************
-/* BASE STYLES
+/* CSS
 /*******************************************/
 
-body {
-
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+main {
+  height: 100vh;
+  background-image: url(yodaedit8.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-footer {
+h1 {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 4em;
+}
 
+h2 {
+  font-size: 5em;
+  color: rgb(54, 243, 54);
+  text-shadow: 0 0 20px, 0 0 50px, 0 0 80px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 1;
+}
+@keyframes fade-inout{
+  0%{  opacity: 0;}
+  100%{opacity: 1;} 
+}
+.fade-in{
+  animation: fade-inout 13s ;
+}
+
+.rock1  {
+  width: 100px;
+  height: 100px;
+  animation: float 2.5s linear infinite alternate;
+}
+.rocks1 {
+  width: 250px;
+  height: 250px;
+  animation: float 3s linear infinite alternate ;
+  
+}
+@keyframes float {
+  from {
+    transform: translateY(-15px) ;
+  }
+  to {
+    transform:  translateY(10px);
+  }
 }
 
 /******************************************
